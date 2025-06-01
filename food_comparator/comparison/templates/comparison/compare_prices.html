@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Price Comparison</title>
+</head>
+<body>
+    <h1>Food Price Comparison</h1>
+
+    {% for comparison in price_comparisons %}
+        <h2>{{ comparison.food_item.name }}</h2>
+        <table>
+            <tr>
+                <th>Delivery App</th>
+                <th>Price</th>
+                <th>Coupon</th>
+                <th>Final Price</th>
+            </tr>
+            {% for price in comparison.prices %}
+            <tr>
+                <td>{{ price.delivery_app.name }}</td>
+                <td>{{ price.price }}</td>
+                <td>{{ price.coupon_code }}</td>
+                <td>{{ price.final_price }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% endfor %}
+</body>
+</html>
