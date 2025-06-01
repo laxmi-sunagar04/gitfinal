@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food Price Comparison</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .food-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 600px;
+    }
+    .food-name {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #444;
+    }
+    .price-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .price-table th, .price-table td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+    .price-table th {
+      background-color: #f0f0f0;
+    }
+    .platform {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🍕 Food Price Comparison</h1>
+
+  <div class="food-card">
+    <div class="food-name">Margherita Pizza</div>
+    <table class="price-table">
+      <tr>
+        <th>Platform</th>
+        <th>Price</th>
+        <th>Coupon</th>
+        <th>Final Price</th>
+      </tr>
+      <tr>
+        <td class="platform">Zomato</td>
+        <td>₹250</td>
+        <td>10% OFF</td>
+        <td>₹225</td>
+      </tr>
+      <tr>
+        <td class="platform">Swiggy</td>
+        <td>₹240</td>
+        <td>Flat ₹20 OFF</td>
+        <td>₹220</td>
+      </tr>
+      <tr>
+        <td class="platform">UberEats</td>
+        <td>₹260</td>
+        <td>15% OFF</td>
+        <td>₹221</td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>
