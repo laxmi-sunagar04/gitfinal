@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Food Items</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #fafafa;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #4CAF50;
+    }
+    ul.food-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul.food-list li {
+      background: #e3f2fd;
+      margin: 10px 0;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Delicious Food Items</h1>
+  <ul class="food-list">
+    <li>Pizza</li>
+    <li>Burger</li>
+    <li>Sushi</li>
+    <li>Pasta</li>
+    <li>Salad</li>
+    <li>Ice Cream</li>
+  </ul>
+</body>
+</html>
